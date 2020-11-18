@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang= "en"> 
+    <meta charset = "utf-8">
+    <meta name = "viewport" content= "width= device-width , initial-scale= 1 ">
+    <head>
+    <title id="title">
+        Survey Form.
+    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet"> 
+        <style>
+
+            
+          
+
+            .main{
+                font-family:"Delius" ;
+                background: rgba(255,255,255, 0.4);
+                background-image: url(https://cdn.pixabay.com/photo/2020/11/13/17/04/church-5739223_960_720.jpg);
+                background-size: 100%, 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                box-sizing: border-box;
+                
+            }
+               
+            #title{
+                margin:0;
+                padding: 0,0;
+                line-height: 30px;
+                
+            }
+            #submit{
+                position: relative;
+                bottom:10px;
+                top: 10px;
+                left:50px;
+                color: white;
+                background-color: black;
+                width:100px;
+                float:middle;
+                border-radius: 10px;
+            
+            }
+            div.form{
+                display: block;
+                text-align: center;
+
+
+            }
+            form{
+                display: inline-block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left;
+                background-color: rgba(255,255,255, 0.6);
+                padding-left:20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+                width: auto;
+                
+
+                
+            }
+
+        
+        </style>
+
+    </head>
+        <main class= "main">
+    <body>
+        <div class ="form">
+
+        <h1 id="title">
+           Survey Form
+        </h1>
+        <p id= "description" style ="line-height: 0px;">
+            Thank you for taking the time to fill this form.
+        </p>
+        
+        <form id= "survey-form">
+            <p>
+            <label for="name" id="name-label">Name</label>
+            <br>
+            <input id="name" type="text" placeholder="Type Name">
+            </p>
+             
+            <p>
+            <label for="email"id="email-label">Email</label>
+            <br>
+            <input id="email" type="email" placeholder="Enter Email">
+            </p>
+            
+        
+            
+            <p>
+            <label for="Age"id="age-label">Age</label>
+            <br>
+            <input id="dropdown"type="number" placeholder="Select Age" min="15" max="72">
+            </p> 
+             
+            <p>
+            <label for="level of education">Education</label>
+            <br>
+            <select name="Level of education " id="Level of Education">
+            <option value="Select Option">Select Option</option>
+            <option value="Primary">Primary</option>
+            <option value="High School ">High School</option>
+            <option value="Diploma/Certificate">Diploma/Certificate</option>
+            <option value="Degree">Degree</option>
+            <option value="Post Graduate">Post Graduate</option>
+            </select>
+            </p>
+
+            <p>
+            <label for="Where do you live ">Where do you live?</label>
+            <br>
+            <input type="radio" name="Where do you live" value="Nairobi">Nairobi
+            <br>
+            <input type="radio" name="Where do you live" value="Coast">Coast
+            <br>
+            <input type="radio" name="Where do you live" value="Nyanza">Nyanza
+            <br>
+            <input type="radio" name="Where do you live" value="Eastern">Eastern
+            <br>
+            <input type="radio" name="Where do you live" value="Western">Western
+            <br>
+            <input type="radio" name="Where do you live" value="North Eastern">North Eastern
+            <br>
+            <input type="radio" name="Where do you live" value="Centarl">Central
+            </p>
+
+            <p>
+            <label for="What do you love about us"> What do you love about us  </label>
+            <br>
+            <input type="checkbox" name="What do you love about us" value="Ease of use">Ease of use 
+            <br>
+            <input type="checkbox" name="What do you love about us" value="Nice design">Nice design
+            <br>
+            <input type="checkbox" name="What do you love about us" value="Fast Customer Support">Fast customer support
+            <br>
+            <input type="checkbox" name="What do you love about us" value="Great services">Great services
+            <br>
+            <input type="checkbox" name="What do you love about us" value="Nothing">Nothing
+            </p>
+
+            <label for="additional info">Additional Information</label>
+            <br>
+            <textarea id="additional info" name="additional info" rows="5" cols="20" placeholder="Type here"></textarea>
+            <br>
+            
+            <input type="button" id="submit" name="Submit" value ="submit"> 
+            </form>
+            </div>
+        </body>
+    </main>
+</html>
+    
